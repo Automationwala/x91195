@@ -1,0 +1,173 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+ 
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 14px;
+
+    font-style: normal;
+}
+
+svg :is(*):hover {
+   
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+ 
+svg{
+    width: 100%;
+}
+
+svg text :hover {
+    fill: #000 !important;
+}
+
+svg :hover text tspan {
+    fill: #000 !important;
+}
+
+/* Ensure the elements transition smoothly */
+#car_section,
+#add_section,
+#mySVG {
+    transition: all 0.9s ease; /* Applies to all properties; adjust timing as needed */
+}
+.list-group-item:nth-child(2n+1)
+{
+    background: rgb(252, 252, 252);
+}
+ .list-group-item{
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 14px;
+ }
+ .overflow_div{
+ height: 78vh;
+ overflow: auto;
+ }
+
+
+ /*scroll bar*/
+ 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(206, 206, 206); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(190, 189, 189); 
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(206, 206, 206); 
+}
+.badge{
+    width: 4.2rem;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 5px !important;
+}
+.bg-warning{
+background: rgb(228, 130, 2) !important;
+}
+text{
+font-size: 9px !important;    
+}
+
+
+.red {
+    fill: red;
+}
+
+.green {
+    fill: green;
+}
+
+.orange {
+    fill: orange;
+}
+
+.badge{
+     font-size: 13px;
+}
+
+
+
+.popup_card {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 10;
+        }
+        .popup_card.active {
+            display: block;
+        }
+        #badge {
+            width: 100px;
+            height: 100px;
+            background-color: #ffffff;
+            border: 1px solid #000;
+        }
+        
+        /* #pathTyreFrontRight.fill_path + rect,#pathTyreFrontLeft.fill_path + rect{
+            fill: none;
+        } 
+        #pathTyreFrontRight + rect,#pathTyreFrontLeft + rect{
+            fill: none;
+        }  */
+
+
+ .list-group-item{
+    transition: 0.6s all }
+
+
+  /* Default label color */
+  label{
+    cursor: pointer;
+  }
+.option-label {
+    padding-left: 10px;
+    font-weight: bold;
+     
+}
+
+/* Color indicators for each option */
+#repairOption:checked ~ label[for="repairOption"],
+#repairOption:hover ~ label[for="repairOption"]  {
+    background-color: #f19f11 !important; /* Orange for repair */
+    color: #fff;
+}
+
+#replaceOption:checked ~ label[for="replaceOption"],
+#replaceOption:hover ~ label[for="replaceOption"] {
+    background-color: #ff3860 !important; /* Red for replace */
+    color: #fff;
+}
+
+#noneOption:checked ~ label[for="noneOption"],
+#noneOption:hover ~ label[for="noneOption"] {
+    background-color: #ffff !important; /* Black for none */
+    color: #000;
+}
+
+#intactOption:checked ~ label[for="intactOption"],
+#intactOption:hover ~ label[for="intactOption"] {
+    background-color: #198754 !important; /* Green for intact */
+    color: #fff;
+}
+
+#popup {
+    box-shadow: 0px 0px 0px 10000px rgb(88 86 86 / 25%);
+}
